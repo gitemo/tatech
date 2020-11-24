@@ -29,37 +29,37 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="login-form">
 						<h2>投票フォーム</h2>
 						<p>空欄にご記入ください (*) マークは必須 </p>
-						<form action="#" method="post">
+						<form action="#" method="post" enctype="multipart/form-data">
 							<ul>
 								 <li class="text-info">*お名前 :</li>
-								 <li><input type="text" name="user_name"></li>
+								 <li><input type="text" name="user_name" placeholder="館林 太郎" required></li>
 								 <div class="clear"></div>
 							 </ul>
 							<ul>
 								 <li class="text-info">*年齢 :</li>
-								 <li><input type="text" name="age" minlength="0" maxlength="150">歳</li>
+								 <li><input type="text" name="age" size="3" required>歳</li>
 								 <div class="clear"></div>
 							 </ul>
 							<ul>
 								 <li class="text-info">*性別 :</li>
-								 <li><input type="radio" name="gender" value="man">男性</li>
+								 <li><input type="radio" name="gender" value="man" required>男性</li>
 								 <li><input type="radio" name="gender" value="woman">女性</li>
 								 <li><input type="radio" name="gender" value="noanswer">回答しない</li>
 								 <div class="clear"></div>
 							 </ul>
 							<ul>
 								 <li class="text-info">*メールアドレス :</li>
-								 <li><input type="text" name="email"></li>
+								 <li><input type="text" name="email" placeholder="tatebayashi@gourmet.com" required></li>
 								 <div class="clear"></div>
 							 </ul>
 							 <ul>
 								 <li class="text-info">*郵便番号 :</li>
-								 <li><input type="text" name="postal_code"></li>
+								 <li><input type="text" name="postal_code" required></li>
 								 <div class="clear"></div>
 							 </ul>
 							 <ul>
 								 <li class="text-info">*都道府県 :</li>
-								 <li><select name="address">
+								 <li><select name="address" required>
 									 <option value="gunma">群馬</option>
 									 <option value="hokkaido">北海道</option>
 									 <option value="aomori">青森</option>
@@ -112,7 +112,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							 </ul>
 							 <ul>
 								 <li class="text-info">*市区町村・番地 :</li>
-								 <li><input type="text" name="municipality"></li>
+								 <li><input type="text" name="municipality" required></li>
 								 <div class="clear"></div>
 							 </ul>
 							 <ul>
@@ -122,7 +122,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							</ul>
 							 <ul>
 								 <li class="text-info">一番気に入ったメニューを選択してください :</li>
-								 <li><input type="radio" name="favorite" value="">【01】武蔵（たけぞう） すり身魚のワンタン包み揚げ</li>
+								 <li><input type="radio" name="favorite" value="" required>【01】武蔵（たけぞう） すり身魚のワンタン包み揚げ</li>
 								 <li><input type="radio" name="favorite" value="">【02】炭たか炭 鴨ロース串焼きボイセンベリーソース添え</li>
 								 <li><input type="radio" name="favorite" value="">【03】石井精肉店 肉ざんまい</li>
 								 <li><input type="radio" name="favorite" value="">【04】和菓子処 田月堂 栗蒸し羊かん（２本入り）</li>
@@ -165,8 +165,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								 <div class="clear"></div>
 							 </ul>
 							 <ul>
-								 <li class="text-info">Type Security :</li>
-								 <li><input type="text" name="typesecurity"></li>
+								 <li class="text-info">投票権の写真をアップォード :</li>
+								 <li><input type="file" name="file" accept="image/*" required></li>
 								 <div class="clear"></div>
 							 </ul>
 							<input type="submit" value="投票">
