@@ -12,6 +12,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <meta name="keywords" content="Flat Feedback Form  Responsive, Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
 <!--web-fonts-->
 <link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 
@@ -235,6 +236,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 							  <ul>
 								 <li class="text-info">*住所 :</li>
+								 <li><!-- ▼郵便番号入力フィールド(3桁+4桁) -->
+									<input type="text" name="zip21" size="4" maxlength="3"> － <input type="text" name="zip22" size="5" maxlength="4" onKeyUp="AjaxZip3.zip2addr('zip21','zip22','addr21','addr21');">
+									<!-- ▼住所入力フィールド(都道府県+以降の住所) -->
+									<input type="text" name="addr21" size="40"></li>
 								 <li><input type="text" name="postal-code" autocomplete="postal-code" required></li>
 								 <div class="clear"></div>
 							  </ul>
