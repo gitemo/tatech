@@ -12,6 +12,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <meta name="keywords" content="Flat Feedback Form  Responsive, Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
 <!--web-fonts-->
 <link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 
@@ -262,6 +263,30 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 							  <ul>
 								<li class="text-info"></li>
+								<li><input type="text" name="address-line2" autocomplete="address-line2" placeholder="建物名・号室"></li>
+								<div class="clear"></div>
+							　</ul>
+
+							  <ul>
+								<li class="text-info">*郵便番号(7桁) :</li>
+								<li><input type="text" name="zip01" size="10" maxlength="8" placeholder="郵便番号" onKeyUp="AjaxZip3.zip2addr(this,'','pref01','addr01');"></li>
+								<div class="clear"></div>
+							　</ul>
+
+							  <ul>
+								<li class="text-info">*都道府県 :</li>
+								<li><input type="text" name="pref01" placeholder="都道府県" size="20"></li>
+								<div class="clear"></div>
+							　</ul>
+
+							　<ul>
+								<li class="text-info">以降の住所</li>
+								<li><input type="text" name="addr01" placeholder="以降の住所" size="60"></li>
+								<div class="clear"></div>
+							　</ul>
+
+						      <ul>
+								<li class="text-info">建物名・号室</li>
 								<li><input type="text" name="address-line2" autocomplete="address-line2" placeholder="建物名・号室"></li>
 								<div class="clear"></div>
 							　</ul>
