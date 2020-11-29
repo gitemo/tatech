@@ -236,10 +236,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 							  <ul>
 								 <li class="text-info">*住所 :</li>
-								 <li><!-- ▼郵便番号入力フィールド(3桁+4桁) -->
-									<input type="text" name="zip21" size="4" maxlength="3"> － <input type="text" name="zip22" size="5" maxlength="4" onKeyUp="AjaxZip3.zip2addr('zip21','zip22','addr21','addr21');">
+								 <!-- ▼郵便番号入力フィールド(3桁+4桁) -->
+									<li><input type="text" name="zip21" size="4" maxlength="3"> － <input type="text" name="zip22" size="5" maxlength="4" onKeyUp="AjaxZip3.zip2addr('zip21','zip22','addr21','addr21');"></li>
 									<!-- ▼住所入力フィールド(都道府県+以降の住所) -->
-									<input type="text" name="addr21" size="40"></li>
+									<li><input type="text" name="addr21" size="40"></li>
 								 <li><input type="text" name="postal-code" autocomplete="postal-code" required></li>
 								 <div class="clear"></div>
 							  </ul>
